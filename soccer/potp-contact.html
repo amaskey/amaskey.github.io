@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+
+    <!-- Replace YOUR_FORMSPREE_ENDPOINT with your actual endpoint from Formspree -->
+    <form action="https://formspree.io/f/moqgqazj" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <!-- This field is used to prevent spam by bots -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
